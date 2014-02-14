@@ -12,6 +12,11 @@ angular.module('ocupateYaApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/signup', {
+        templateUrl: 'views/signup.html',
+        
+      })
+
       .otherwise({
         redirectTo: '/'
       });
