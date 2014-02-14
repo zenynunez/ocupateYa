@@ -6,7 +6,7 @@ angular.module('ocupateYaApp', [
   'ngSanitize',
   'ngRoute'
 ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider,$locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -14,9 +14,7 @@ angular.module('ocupateYaApp', [
       })
       .when('/signup', {
         templateUrl: 'views/signup.html',
-        
       })
-
       .otherwise({
         redirectTo: '/'
       });
