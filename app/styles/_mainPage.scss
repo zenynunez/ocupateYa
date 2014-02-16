@@ -1,11 +1,17 @@
 .homePage{
 	background : url(../images/bg.jpg) no-repeat center center fixed; 
-  position   : fixed; 
   top        : 0; 
   left       : 0; 
   min-width  : 100%;
   min-height : 100%;
+  padding-bottom: 23%;
+  h1{
+    font-size: 8em;
+    color:#fff;
+	}
   p{
-  	color : white;
+    font-size: 17px;
+    color: #fff;
   }
 }
+
