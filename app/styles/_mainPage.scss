@@ -1,17 +1,45 @@
 .homePage{
-	background : url(../images/bg.jpg) no-repeat center center fixed; 
-  top        : 0; 
-  left       : 0; 
-  min-width  : 100%;
-  min-height : 100%;
-  padding-bottom: 23%;
-  h1{
-    font-size: 8em;
-    color:#fff;
+  overflow : hidden; 
+  h2{
+    color : #f18e01;
 	}
   p{
-    font-size: 17px;
-    color: #fff;
+    font-size : 17px;
+    color     : #fff;
+  }
+  .blur{
+    padding-top : 60px; 
+    position    : absolute;
+    width       : 100%;
+    background  : rgba(0, 0, 0, 0.3); 
+    z-index     : 100; 
+  }
+  .icons-cont{
+    padding-top : 40px; 
+    .col-md-4{
+      img{
+        display : block;
+        margin  : 0 auto;  
+      }
+      h2{
+        color      : #59C0B8;
+        text-align : center; 
+      }
+    }
+  }
+  video#bgvid {
+    right           : 0; 
+    bottom          : 0;
+    min-width       : 100%; 
+    min-height      : 100%;
+    width           : auto; 
+    height          : auto; 
+    z-index         : -100;
+    background-size : cover;
+    -webkit-filter  : blur(5px);
+    -moz-filter     : blur(5px);
+    -o-filter       : blur(5px);
+    -ms-filter      : blur(5px); 
   }
 }
 

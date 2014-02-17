@@ -1,9 +1,7 @@
 'use strict';
 
-angular.module('ocupateYaApp', [
-  'ngCookies',
+angular.module('ocupateYaApp',[
   'ngResource',
-  'ngSanitize',
   'ngRoute'
 ])
   .config(function ($routeProvider) {

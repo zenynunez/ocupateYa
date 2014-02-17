@@ -17,13 +17,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
+    overflow-x : hidden; 
 }
 
 /* Custom page header */
@@ -47,17 +41,8 @@ body {
 }
 
 
-.container{
-    margin-top : 50px; 
-}
 .container-narrow > hr {
     margin: 30px 0;
-}
-
-.header{
-    .container{
-        margin-top : 0px;
-    } 
 }
 
 /* Supporting marketing content */
@@ -78,8 +63,34 @@ h1{
 
 
 /* END General Styles*/
-
-
+.navbar-default{
+    background-color : #f0f7f7;
+    border-color     : #707074; 
+    .nav{
+        margin-left : -15px; 
+    }
+    .active{
+        a{
+            background-color : #707074!important;
+            color            : #f0f7f7!important;
+            &:hover{
+                color : #f0f7f7;
+            }
+        }
+    }
+    .nav{
+        li{
+            a{
+                span{
+                    color : #f18e01;
+                }
+                &:hover{
+                    color : #f18e01;
+                }
+            }
+        }
+    }
+}
 
 
 /* Responsive: Portrait tablets and up */
@@ -94,13 +105,5 @@ h1{
     .footer {
         padding-left: 0;
         padding-right: 0;
-    }
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
     }
 }
