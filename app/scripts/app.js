@@ -2,7 +2,8 @@
 
 angular.module('ocupateYaApp',[
   'ngResource',
-  'ngRoute'
+  'ngRoute',
+  'google-maps'
 ])
   .config(function ($routeProvider) {
     $routeProvider

@@ -5,6 +5,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'info';
 @import 'signup';
 @import 'informese';
+@import 'contact';
 
 .browsehappy {
     margin: 0.2em 0;
@@ -91,7 +92,6 @@ h1{
         }
     }
 }
-
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 970px) {

@@ -5,8 +5,11 @@ angular.module('ocupateYaApp')
     return {
       restrict: 'A',
       link: function(scope, element, attrs){
-      	var inner = $window.innerHeight;
-		$(element).css('height', inner);
+      	var inner   = $window.innerHeight;
+      	var contact = inner - 100;
+		$(element).height(inner);
+		$('.angular-google-map-container').height(inner);
+		$('.contact-over').css('margin-top', '-'+contact+'px');
       }
     };
   });
