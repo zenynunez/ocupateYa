@@ -3,9 +3,35 @@
 		position        : absolute;
 		width           : 400px;
 		height          : 500px; 
-		background      : rgba(240, 247, 247, .8);
+		//background      : rgba(240, 247, 247, .8);
 		margin          : -700px 150px 0 0;
 		right           : 0;
-		border          : solid 1px #707074; 
+		//border          : solid 1px #707074; 
+	}
+	.foot{
+		height      : 220px;
+		width       : 100%;
+		margin-top  : -180px;
+		background  : #707074;
+		position    : absolute;
+    padding-top : 20px; 
+		.col-md-7{
+			h2{
+				font-size : 18px; 
+				color     : #fff;
+			}
+      p{
+        color          : #fff;
+        font-size      : 12px;
+        letter-spacing : 1px; 
+        padding-top    : 65px;  
+      }
+			.btn{
+				border-radius : 0; 
+				&:hover{
+					color : #fff;
+				}
+			}
+		}
 	}
 }

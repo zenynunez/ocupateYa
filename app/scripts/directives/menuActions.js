@@ -23,6 +23,7 @@ angular.module('ocupateYaApp')
         		$(elDiv).waypoint({
         			offset  : 50,
         			handler : function(position){
+                console.log(position);
         				element.find('.nav li').removeClass('active');
           			$('.'+elDiv.substring(1)).addClass('active');
           		}

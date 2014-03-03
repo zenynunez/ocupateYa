@@ -1,7 +1,7 @@
 <div class="homePage" id="home">
 	<div class="blur" fulldiv>
     <div class="container">
-      <div class="row">
+      <div class="row main-offset">
         <div class="col-md-6 col-sm-12">
           <h2>DEVELOP, TOGETHER!</h2>
           <p>Learn programming or make apps. 
@@ -11,8 +11,77 @@
             Sign up now and join the fun!
           </p>
         </div>
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-6 col-sm-12 ingreso-form">
           <h2>¿NUEVO INGRESO?</h2>
+          <div class="col-md-6" ng-click="persona()" ng-class="{ingresar : personas}">
+            <p>PERSONA</p>
+          </div>
+          <div class="col-md-6" ng-click="empresas()" ng-class="{ingresar : empresa}">
+            <p>EMPRESA</p>
+          </div>
+          <div class="col-md-12" ng-show="personas">
+            <form action="" role="form">
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="NOMBRE">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="APELLIDO">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="TELEFONO">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="EMAIL">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="CONTRASEÑA">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="CONF. CONTRASEÑA">
+              </div>
+              <div class="col-md-12 lowPer">
+                <div class="col-md-8">
+                  <a class="btn btn-block btn-social btn-facebook">
+                    <i class="fa fa-facebook"></i>ENTRAR CON FACEBOOK
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <button type="submit" class="btn btn-default enter">ENVIAR</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-12" ng-show="empresa">
+            <form action="" role="form">
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="NOMBRE">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="APELLIDO">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="TELEFONO">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="EMAIL">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="CONTRASEÑA">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="CONF. CONTRASEÑA">
+              </div>
+              <div class="col-md-12 low">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="NOMBRE EMPRESA">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="PAGINA WEB">
+              </div>
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-default enter">ENVIAR</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       <div class="row icons-cont">
@@ -38,7 +107,6 @@
 </div>
 
 <div ng-include="'views/info.html'"></div>
-<div ng-include="'views/signup.html'"></div>
 <div ng-include="'views/informese.html'"></div>
 <div ng-include="'views/contact.html'"></div>
 
