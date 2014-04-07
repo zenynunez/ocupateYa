@@ -22,14 +22,22 @@ angular.module('ocupateYaApp')
         		var elDiv = $(item).children().attr('href');
         		$(elDiv).waypoint({
         			offset  : 50,
-        			handler : function(position){
-                console.log(position);
+        			handler : function(){
         				element.find('.nav li').removeClass('active');
           			$('.'+elDiv.substring(1)).addClass('active');
           		}
         		});
         	});
         });
+
+        element.find('.dropdown').hover(
+          function(){
+            $(this).find('.dropdown-menu').slideDown(500);
+          },
+          function(){
+            $(this).find('.dropdown-menu').slideUp(500);
+          }
+        );
       }
     };
   });

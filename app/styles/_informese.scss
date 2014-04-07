@@ -3,4 +3,28 @@
   top         : 0; 
   left        : 0; 
   min-width   : 100%;
+  color       : #f0f7f7;
+  h2, h4{
+  	color : #f18e01;
+  }
+  .list-inline{
+  	position : relative;  
+    width    : 100%;  
+    margin   : 0; 
+    height   : 200px;
+    overflow : hidden;  
+  }
+  .each-evt{
+  	margin-right : 20px;
+  	width        : 290px;
+  	height       : 200px;
+  	overflow     : hidden;  
+  	display      : block; 
+  	float        : left; 
+  	.evt-cont{
+  		max-width  : 120px; 
+  		max-height : 120px;
+  		overflow   : hidden;  
+  	}
+  }
 }

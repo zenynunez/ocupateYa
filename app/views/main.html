@@ -3,12 +3,8 @@
     <div class="container">
       <div class="row main-offset">
         <div class="col-md-6 col-sm-12">
-          <h2>DEVELOP, TOGETHER!</h2>
-          <p>Learn programming or make apps. 
-            Hack Ruby, Go, Java, NodeJS, PHP, C, and Python. 
-            Install Wordpress, Laravel, Django, and Bootstrap.
-            Play with MySQL, Mongo, and enjoy root access. 
-            Sign up now and join the fun!
+          <h2>BUSCAS EMPLEO</h2>
+          <p>En OCUPATEYA podras encontrar y ofrecer empleo de una manera rapida y sensilla desde la comodidad de tu hogar. 
           </p>
         </div>
         <div class="col-md-6 col-sm-12 ingreso-form">
@@ -19,7 +15,7 @@
           <div class="col-md-6" ng-click="empresas()" ng-class="{ingresar : empresa}">
             <p>EMPRESA</p>
           </div>
-          <div class="col-md-12" ng-show="personas">
+          <div class="col-md-12" ng-class="{persona : personas}" ng-show="personas">
             <form action="" role="form">
               <div class="col-md-6">
                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="NOMBRE">
@@ -51,7 +47,7 @@
               </div>
             </form>
           </div>
-          <div class="col-md-12" ng-show="empresa">
+          <div class="col-md-12 emp" ng-class="{persona : empresa}" ng-show="empresa">
             <form action="" role="form">
               <div class="col-md-6">
                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="NOMBRE">
@@ -100,13 +96,14 @@
       </div>
     </div>
   </div>
-  
-  <video autoplay loop id="bgvid">
-    <source src="images/hands.mp4" type="video/mp4">
-  </video>
+  <video id="bgvid" class="video-js vjs-default-skin" autoplay="true" loop="true" preload="auto" videojs>
+    <source src="images/hands.mp4"  type='video/mp4' />
+    <source src="images/hands.webm" type='video/webm' />
+    <source src="images/hands.ogg"  type='video/ogg' />
+  </video> 
 </div>
 
-<div ng-include="'views/info.html'"></div>
+<!--<div ng-include="'views/info.html'"></div>-->
 <div ng-include="'views/informese.html'"></div>
 <div ng-include="'views/contact.html'"></div>
 

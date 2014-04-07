@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('ocupateYaApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, getPosts){
+    console.log(getPosts);
+    $scope.posts        = getPosts.posts;
     $scope.personas     = true;
     $scope.empresa      = false;
     $scope.currentDate  = new Date().getFullYear(); 

@@ -105,8 +105,14 @@ h1{
         } 
     }
     .dropdown{
-        a{
-            color : #707074!important; 
+        &:hover{
+            a{
+                -webkit-transition : all ease-out .5s;
+                -moz-transition    : all ease-out .5s;
+                transition         : all ease-out .5s;
+                background : #707074!important; 
+                color      : #f0f7f7!important;
+            }
         }
         .dropdown-menu{
             width            : 280px; 
@@ -129,6 +135,16 @@ h1{
             }
         }
     }
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
 }
 
 /* Responsive: Portrait tablets and up */

@@ -30,6 +30,7 @@
     margin-top : 80px; 
   }
   .ingreso-form{
+    min-height: 390px;
     h2, p{
       text-align : center; 
     }
@@ -156,19 +157,24 @@
       }
     }
   }
-  video#bgvid {
-    right           : 0; 
-    bottom          : 0;
-    min-width       : 100%; 
-    min-height      : 100%;
-    width           : auto; 
-    height          : auto; 
-    z-index         : -100;
-    background-size : cover;
-    -webkit-filter  : blur(5px);
-    -moz-filter     : blur(5px);
-    -o-filter       : blur(5px);
-    -ms-filter      : blur(5px); 
-  }
+}
+
+/* you can use natural CSS transitions just
+   as you would without using ngAnimate */
+.persona{
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+  opacity:1;
+}
+
+.persona.ng-hide{
+  opacity:0;
+}
+
+.persona.ng-hide-add, .persona.ng-hide-remove {
+  /* this needs to be here to make it visible during the animation
+     since the .ng-hide class is already on the element rendering
+     it as hidden. */
+  display:block!important;
 }
 

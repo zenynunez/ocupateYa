@@ -7,7 +7,7 @@
   </div>
   <div class="row">
     <div class="col-md-6">
-      <h3>Objetivos Específicos:</h3>
+      <h4>Objetivos Específicos:</h4>
       <p>Tener al alcance de las empresas del país y de la Región Centroamericana la más amplia y calificada base de datos de oferentes para mejorar el proceso de contratación.
       Ser reconocidos en Costa Rica y la Región Centroamericana como la empresa número uno en facilitar el encadenamiento de oferentes,  contratantes y colocadores de empleo.
       Ser los socios de negocios de las empresas que necesiten de la certificación de las referencias laborales de sus candidatos a plazas vacantes.
@@ -18,8 +18,23 @@
     </p>
     </div>
     <div class="col-md-4 col-md-offset-1 col-sm-6 feature-graphic">
-        <img src="../images/support.png">
-      </div>
+      <img src="../images/support.png">
+    </div>
+    <div class="col-md-12">
+      <ul class="list-inline">
+        <li ng-repeat="post in posts" class="each-evt cf" carousel position="">
+          <h4>{{post.title}}</h4>
+          <div>
+            <div class="pull-left">
+              <img ng-src="{{post.thumbnail}}" alt="" width="150">
+            </div>
+            <div class="pull-left evt-cont">
+              <p ng-bind-html="post.content"></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 
